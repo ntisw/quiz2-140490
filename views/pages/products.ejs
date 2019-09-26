@@ -18,7 +18,7 @@
                     <th scope="row"><%= product.ProductID %></th>
                     <td><%= product.ProductName %></td>
                     <td>
-                        <a  href="productdetail/<%= product.ProductID %>" class="btn btn-info">View Detail</a>
+                        <a href="productdetail/<%= product.ProductID %>" class="btn btn-info">View Detail</a>
                     </td>
                 </tr>
                 <% }); %>
@@ -27,4 +27,8 @@
     </div>
 
 </div>
+
 <%include ../partials/footer%>
+<script>
+    $("#navlink_products").addClass("active");
+</script>
